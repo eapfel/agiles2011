@@ -7,7 +7,7 @@ public class BasicTest extends UnitTest {
 
     @Test
     public void aVeryImportantThingToTest() {
-        assertEquals(5, 1 + 4);
+        assertEquals(5, 1 + 3);
     }
 
 }
