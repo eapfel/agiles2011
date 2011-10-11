@@ -13,7 +13,7 @@ public class TweetTest extends UnitTest {
 		long count = Tweet.count();
 		Tweet t = new Tweet();
 	
-		t.tweet = "a new tweet";
+		t.tweet = "a new tweets";
 		t.save();
 		
 		long count2 = Tweet.count();
