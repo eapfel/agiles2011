@@ -10,7 +10,7 @@ import play.data.validation.Required;
 import play.db.jpa.Model;
 
 @Entity
-@Table(name="Tweet\"")
+@Table(name="tweets")
 public class Tweet extends Model {
 	
 	@Required
