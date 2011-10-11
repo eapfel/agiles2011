@@ -1,12 +1,12 @@
 #!/bin/sh
 
-echo "Promoviendo a producction desde el tag jenkins-${JOB_NAME}-${PROMOTED_NUMBER}"
+echo "Promoviendo a producction desde el tag jenkins-agile2011-last-${PROMOTED_NUMBER}"
 
 cd ..
 
-if [ ! -d jenkins-agiles2011-${PROMOTED_NUMBER} ];
+if [ ! -d jenkins-agile2011-last-${PROMOTED_NUMBER} ];
 then
-git clone git@github.com:eapfel/agiles2011.git jenkins-${JOB_NAME}-${PROMOTED_NUMBER}
+git clone git@github.com:eapfel/agiles2011.git jenkins-agile2011-last-${PROMOTED_NUMBER}
 fi
 
 cd jenkins-${JOB_NAME}-${PROMOTED_NUMBER}
