@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import play.data.validation.MaxSize;
 import play.data.validation.Required;
