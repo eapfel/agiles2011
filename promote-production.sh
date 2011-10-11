@@ -9,7 +9,7 @@ then
 git clone git@github.com:eapfel/agiles2011.git jenkins-agile2011-last-${PROMOTED_NUMBER}
 fi
 
-cd jenkins-${JOB_NAME}-${PROMOTED_NUMBER}
+cd jenkins-agile2011-last-${PROMOTED_NUMBER}
 
 if [ -z `git remote | grep heroku-prod` ];
 then
