@@ -1,1 +1,1 @@
-web:    play run --http.port=$PORT --%dev -Dprecompiled=true -DDATABASE_URL=mem
+web:    play run --http.port=$PORT $PLAY_OPTS -DDATABASE_URL=mem
