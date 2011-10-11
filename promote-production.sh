@@ -1,15 +1,15 @@
 #!/bin/sh
 
-echo "Promoviendo a producction desde el tag jenkins-agiles2011-${PROMOTED_NUMBER}"
+echo "Promoviendo a producction desde el tag jenkins-${JOB_NAME}-${PROMOTED_NUMBER}"
 
 cd ..
 
 if [ ! -d jenkins-agiles2011-${PROMOTED_NUMBER} ];
 then
-git clone git@github.com:eapfel/agiles2011.git jenkins-agiles2011-${PROMOTED_NUMBER}
+git clone git@github.com:eapfel/agiles2011.git jenkins-${JOB_NAME}-${PROMOTED_NUMBER}
 fi
 
-cd jenkins-agiles2011-${PROMOTED_NUMBER}
+cd jenkins-${JOB_NAME}-${PROMOTED_NUMBER}
 
 if [ -z `git remote | grep heroku-prod` ];
 then
